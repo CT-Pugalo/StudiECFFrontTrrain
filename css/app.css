@@ -1,0 +1,64 @@
+:root {
+    --primary-color: #F3DCBB;
+    --secondary-color: #9A9AA4;
+    --selected-color: #8F7A6D;
+}
+
+@keyframes navbar-animation {
+    from {
+        background-color: rgba(0, 0, 0, 0);
+    }
+    to {
+        background-color: rgba(0, 0, 0, 100);
+    }
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.main {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr 15fr;
+}
+
+nav {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.navbar {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.navbar-item {
+    display: inline-flex;
+    margin-left: 5%;
+}
+
+.navbar-item>a {
+    color: var(--primary-color);
+}
+
+.navbar-item:hover {
+    animation-name: navbar-animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}

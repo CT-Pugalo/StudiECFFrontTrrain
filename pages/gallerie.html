@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<template style="display: grid; grid-template-columns: 2fr 1fr; grid-column-gap: 0.5fr; background-color: white;" id="card_template">
+    <ul>
+        <li style="grid-column-start: 1; grid-column-end: 2; background-color: grey;" name="img"></li>
+        <li style="grid-column-start: 2; grid-column-end: 3; background-color: grey;" name="desc"></li>
+    </ul>
+</template>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/app.css" rel="stylesheet">
+    <link href="../css/gallerie.css" rel="stylesheet">
+    <title>Gallerie</title>
+</head>
+
+<body id="background">
+    <div class="main">
+        <header>
+            <nav>
+                <div class="navbar">
+                    <ul>
+                        <li class="navbar-item"><a href="../index.html">Acceuil</a></li>
+                        <li class="navbar-item"><a href="./pages/gallerie.html">Gallerie</a></li>
+                        <li class="navbar-item"><a href="./pages/tarifs.html">Tarifs et Prestation</a></li>
+                        <li class="navbar-item"><a href="./pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div id="content">
+
+        </div>
+    </div>
+    <script src="../js/card_element.js"></script>
+    <script src="../js/gallerie.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+#background {
+    background-color: var(--secondary-color);
+}
+
+#content {
+    display: grid;
+}

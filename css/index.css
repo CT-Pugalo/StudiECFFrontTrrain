@@ -1,0 +1,14 @@
+#background {
+    background-image: url("../images/camera-4830248.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#content {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+}
